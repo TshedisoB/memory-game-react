@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+::selection {
+  background: #407a41;  
+  color: white;
+}
+
+body {  
+  text-align: center;
+  background-color: #caadef; 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+h1{
+  font-size: 1.5em
+}

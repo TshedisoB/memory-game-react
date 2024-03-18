@@ -1,0 +1,323 @@
+.game {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: none;
+  background-color: #caadef;
+}
+
+img {
+    border: 5px solid white;
+}
+
+.game-header {    
+  text-align: center; 
+  text-decoration: underline;
+  font-size: 1.5em;
+  color: rgb(7, 6, 89);
+  margin: 0.5rem;
+}
+
+.game-title {
+  font-size: 1em;
+}
+
+.game-status, .board-display {
+  padding: 20px;
+  white-space: pre;
+  color: white;
+}
+
+.game-button, #start-button {
+  background-color: #1a8e1e;
+  border: #1a358e;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; 
+}
+
+#rules-button {
+  background-color: #9a1a1a;
+  border: #1a358e;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; 
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.game-intro {
+  font-size: large;
+}
+
+.card {
+  display: inline-block;
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 110px;
+}
+
+.num-cards-button-container > button {
+  font-size: 3.5em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  background-color:bisque;
+}
+
+.matched {
+  border-color: #23b71b;
+}
+
+.container {
+  display: grid; 
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-image: linear-gradient(to right, rgba(233, 185, 185, 0.694), #f5fbc3c3); 
+  grid-template-columns: 1fr 1fr;
+}
+
+.flip-card {
+  width: 140px;
+  height: 140px;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 110px;
+  height: 110px;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.animate .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+} 
+
+img {
+  width: 130px; 
+}
+
+#complete{
+  font-size: 1.5em;
+  color: #1a8e1e;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0.4rem;
+}
+
+#cardTurns,#timeResult,#chosenGrid {
+  font-size: 1.4em;
+  color: #201a8e;
+  font-weight: bold;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-button-container {
+  margin-top: 20px;
+}
+
+.game-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.game-button:hover {
+  background-color: #3e8e41;
+}
+
+#start-button:hover {
+  background-color: #3a713c;
+}
+
+.turns,#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #1c1a8e;
+  font-weight: bold;
+}
+
+#infoIcon {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 20%;
+}
+
+#liveCount,#timerHeading { 
+  color: #ab1912;
+  margin-right: 0.3rem;
+  font-weight: bold;
+}
+
+#startTime {
+  color: rgb(7, 6, 89);
+}
+
+#turnDisplay, #timeDisplay,#rows, #columns {
+  color: #1a8e1e;
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+.grid-container  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+}
+
+.grid-page { 
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #caadef;
+}
+
+.custom-grid {
+  display: grid;
+  border: 4px solid rgb(34, 117, 11);
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative;
+  width: min-content;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.rows, .columns {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(71, 3, 144);
+  border-radius: 0.5rem;
+  margin: 0.6rem;
+  padding: 0.6rem;
+}
+
+.dimensions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-heading {
+  display: flex;
+  justify-content: center;
+  color: rgb(7, 6, 89);
+  text-decoration: underline;
+}
+
+.custom-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-icon {    
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin: 0.5rem;
+  background-color: #ff6464;
+}
+
+.info-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  border-radius: 60%;
+  background-color: #ff6464;
+}
+
+.rules-modal, .rules-list {
+  display: grid;
+  list-style: none;
+  background-color: white;
+  margin: 0.3rem; 
+}
+
+#rules-heading {
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1a8e1e;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+#rowValue, #columnValue {
+  font-size: 1.2rem;
+}
